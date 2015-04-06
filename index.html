@@ -17,10 +17,6 @@ layout: default
 						<!-- <img src="{{ site.url }}/img/thumb/{{ post.photo }}" alt="{{  }}"/> -->
 
 						<img src="/img/thumb/{{ post.photo }}" alt="{{  }}"/>
-						<figcaption>
-							<h3>{{ post.caption_header }}</h3>
-							<p>{{ post.caption }}</p>
-						</figcaption>
 					</figure>
 				</li>
 				{% endfor %}
@@ -33,21 +29,24 @@ layout: default
 				{% for post in site.posts %}
 				<li>
 					<figure>
-					<!-- <img src="{{ site.url }}/img/large/{{ post.photo }}" alt="{{ post.caption_header }}"/> -->
+						<!-- <img src="{{ site.url }}/img/large/{{ post.photo }}" alt="{{ post.caption_header }}"/> -->
 
-					<img src="/img/large/{{ post.photo }}" alt="{{ post.caption_header }}"/>
-						<figcaption><h3>{{ post.caption_header }}</h3><p>{{ post.caption }}</p></figcaption>
-					</figure>
-				</li>
-				{% endfor %}
-			</ul>
-			<nav>
-				<span class="icon nav-prev"></span>
-				<span class="icon nav-next"></span>
-				<span class="icon nav-close"></span>
-			</nav>
-			<div class="info-keys icon">Navigate with arrow keys</div>
-		</section><!-- // slideshow -->
+						<img src="/img/large/{{ post.photo }}" alt="{{ post.caption_header }}"/>
+						<!--<figcaption>
+						 <h3>{{ post.caption_header }}</h3>
+						<p>{{ post.caption }}</p>
+					</figcaption> -->
+				</figure>
+			</li>
+			{% endfor %}
+		</ul>
+		<nav>
+			<span class="icon nav-prev"></span>
+			<span class="icon nav-next"></span>
+			<span class="icon nav-close"></span>
+		</nav>
+		<!-- 			<div class="info-keys icon">Navigate with arrow keys</div>-->
+	</section><!-- // slideshow -->
 
-	</div><!-- // grid-gallery -->
+</div><!-- // grid-gallery -->
 </div>
