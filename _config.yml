@@ -1,8 +1,8 @@
-name: Photo gallery
+name: Anne Muehlmeier
 markdown: redcarpet
-pygments: true
-permalink: /:year/:month/:title/
+highlighter: true
+permalink: /portfolio/:caption_header/:photo/ #/:year/:month/:title/
 url: http://127.0.0.1:4000/ # http://nadjetey.github.io/GridGallery/
 author:
-    name: Nii Adjetey Sowah
-    twitter: #
+    name: Dan Bender
+    twitter: https://twitter.com/thedanbender
