@@ -143,15 +143,6 @@
 		transition: opacity 0.3s, visibility 0s 0.3s;
 	}
 
-	.current {
-		width: 75% !important;
-		height: 94% !important;
-		position: absolute !important;
-		left: 10% !important;
-		top: 3% !important;
-		margin: 0 auto !important;
-	}
-
 	.slideshow figure {
 		width: 100%;
 		height: 100%;
@@ -165,6 +156,17 @@
 		font-weight: 300;
 		font-size: 200%;
 	}
+
+/* Overwriting show styles for currently viewed img */
+	.current {
+		width: 75% !important;
+		height: 94% !important;
+		position: absolute !important;
+		left: 12.5% !important;
+		top: 3% !important;
+		margin: 0 auto !important;
+	}
+
 
 	/* Navigation */
 	.slideshow nav span {
