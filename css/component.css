@@ -17,13 +17,15 @@
 	}
 
 	.grid-gallery figure {
-		margin: 0 auto;
+		margin: 0;
 	}
 
 	.grid-gallery figure img {
 		margin: 0 auto;
 		display: block;
-		height: 100%;
+		max-width: 100%;
+		max-height: 100%;
+
 	}
 
 	.grid-gallery figcaption h3 {

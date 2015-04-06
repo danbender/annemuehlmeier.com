@@ -18,7 +18,8 @@ a {
 	color: #000;
 }
 
-:hover, :focus {
+a:hover, .icon:hover, .nav-prev:hover, .nav-prev:hover, .nav-close:hover,
+a:hover, .icon:focus, .nav-prev:focus, .nav-prev:focus, .nav-close:focus {
 	color: rgba(0,0,0,0.7);
 }
 
