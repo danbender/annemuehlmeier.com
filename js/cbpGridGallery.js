@@ -163,11 +163,14 @@
 		if( this.prevItem ) {
 			classie.addClass( this.prevItem, 'show' );
 			var translateVal = Number( -1 * ( getViewportW() / 2 + this.prevItem.offsetWidth / 2 ) );
+			console.log("prev " + translateVal);
 			setTransform( this.prevItem, support.support3d ? 'translate3d(' + translateVal + 'px, 0, -150px)' : 'translate(' + translateVal + 'px)' );
 		}
 		if( this.nextItem ) {
 			classie.addClass( this.nextItem, 'show' );
 			var translateVal = Number( getViewportW() / 2 + this.nextItem.offsetWidth / 2 );
+			console.log("next " + translateVal);
+
 			setTransform( this.nextItem, support.support3d ? 'translate3d(' + translateVal + 'px, 0, -150px)' : 'translate(' + translateVal + 'px)' );
 		}
 	};
@@ -187,8 +190,8 @@
 		var self = this,
 			itemWidth = this.currentItem.offsetWidth,
 			// positions for the centered/current item, both the side items and the incoming ones
-			transformLeftStr = support.support3d ? 'translate3d(-' + Number( getViewportW() / 2 + itemWidth / 2 ) + 'px, 0, -150px)' : 'translate(-' + Number( getViewportW() / 2 + itemWidth / 2 ) + 'px)',
-			transformRightStr = support.support3d ? 'translate3d(' + Number( getViewportW() / 2 + itemWidth / 2 ) + 'px, 0, -150px)' : 'translate(' + Number( getViewportW() / 2 + itemWidth / 2 ) + 'px)',
+			transformLeftStr = support.support3d ? 'translate3d(-' + Number( getViewportW() / 200 + itemWidth / 2 ) + 'px, 0, -150px)' : 'translate(-' + Number( getViewportW() / 2 + itemWidth / 2 ) + 'px)',
+			transformRightStr = support.support3d ? 'translate3d(' + Number( getViewportW() / 200 + itemWidth / 2 ) + 'px, 0, -150px)' : 'translate(' + Number( getViewportW() / 2 + itemWidth / 2 ) + 'px)',
 			transformCenterStr = '', transformOutStr, transformIncomingStr,
 			// incoming item
 			incomingItem;

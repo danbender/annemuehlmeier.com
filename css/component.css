@@ -62,11 +62,6 @@
 		opacity: 0.7;
 	}
 
-	.grid figcaption {
-		background: #e4e4e4;
-		padding: 25px;
-	}
-
 	/* Slideshow style */
 	.slideshow {
 		position: fixed;
@@ -81,15 +76,15 @@
 		overflow: hidden;
 		-webkit-perspective: 1000px;
 		perspective: 1000px;
-		-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
-		transition: opacity 0.5s, visibility 0s 0.5s;
+		-webkit-transition: opacity 0.3s, visibility 0s 0.3s;
+		transition: opacity 0.3s, visibility 0s 0.3s;
 	}
 
 	.slideshow-open .slideshow {
 		opacity: 1;
 		visibility: visible;
-		-webkit-transition: opacity 0.5s;
-		transition: opacity 0.5s;
+		-webkit-transition: opacity 0.3s;
+		transition: opacity 0.3s;
 	}
 
 	.slideshow ul {
@@ -99,13 +94,13 @@
 		transform-style: preserve-3d;
 		-webkit-transform: translate3d(0,0,150px);
 		transform: translate3d(0,0,150px);
-		-webkit-transition: -webkit-transform 0.5s;
-		transition: transform 0.5s;
+		-webkit-transition: -webkit-transform 0.3s;
+		transition: transform 0.3s;
 	}
 
 	.slideshow ul.animatable li {
-		-webkit-transition: -webkit-transform 0.5s;
-		transition: transform 0.5s;
+		-webkit-transition: -webkit-transform 0.3s;
+		transition: transform 0.3s;
 	}
 
 	.slideshow-open .slideshow ul {
@@ -114,7 +109,7 @@
 	}
 
 	.slideshow li {
-		width: 660px;
+		width: auto;
 		height: 560px;
 		position: absolute;
 		top: 50%;
@@ -134,7 +129,7 @@
 		height: 100%;
 		top: 0;
 		left: 0;
-		background: rgba(255,255,255,0.8);
+		background: rgba(255,255,255,0.9);
 		-webkit-transition: opacity 0.3s;
 		transition: opacity 0.3s;
 	}
@@ -150,13 +145,13 @@
 		width: 75% !important;
 		height: 94% !important;
 		position: absolute !important;
-		left: 12.5% !important;
+		left: 10% !important;
 		top: 3% !important;
 		margin: 0 auto !important;
 	}
 
 	.slideshow figure {
-		 width: 100%;
+		width: 100%;
 		height: 100%;
 	}
 
@@ -224,9 +219,7 @@
 	}
 
 
-	/* Example media queries (reduce number of columns and change slideshow layout) */
-
-/*	@media screen and (max-width: 60em) {
+	@media screen and (max-width: 60em) {
 		.grid li {
 			width: 33.3%;
 		}
@@ -243,6 +236,7 @@
 			width: auto;
 			margin: 0 auto;
 			max-width: 100%;
+			height: auto;
 		}
 
 		.slideshow nav span,
@@ -267,4 +261,4 @@
 		.grid li {
 			width: 100%;
 		}
-	}*/
+	}
