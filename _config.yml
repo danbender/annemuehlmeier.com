@@ -2,7 +2,7 @@ name: Photo gallery
 markdown: redcarpet
 pygments: true
 permalink: /:year/:month/:title/
-url: http://nadjetey.github.io/GridGallery/
+url: http://127.0.0.1:4000/ # http://nadjetey.github.io/GridGallery/
 author:
     name: Nii Adjetey Sowah
     twitter: #
