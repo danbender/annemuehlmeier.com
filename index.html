@@ -1,45 +1,44 @@
 ---
 layout: default
 ---
-<div class="container">
-	<header class="clearfix">
-		<a href="#"><h1>{{ site.name }}</h1></a>
-		<nav class="">
-			<ul>
-				<li><a href="#">Portfolio</a></li>
-				<li><a href="#">Video</a></li>
-				<li><a href="#">News</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<div id="grid-gallery" class="grid-gallery">
+<header class="clearfix">
+	<a href="#"><h1>{{ site.name }}</h1></a>
+	<nav class="">
+		<ul>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">Video</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+</header>
+<div id="grid-gallery" class="grid-gallery">
 
-		<section class="grid-wrap">
-			<ul class="grid">
-				<li class="grid-sizer"></li><!-- for Masonry column width -->
+	<section class="grid-wrap">
+		<ul class="grid">
+			<li class="grid-sizer"></li><!-- for Masonry column width -->
 
-				{% for post in site.posts %}
-				<li>
-					<figure>
-						<!-- <img src="{{ site.url }}/img/thumb/{{ post.photo }}" alt="{{  }}"/> -->
+			{% for post in site.posts %}
+			<li>
+				<figure>
+					<!-- <img src="{{ site.url }}/img/thumb/{{ post.photo }}" alt="{{  }}"/> -->
 
-						<img src="/img/thumb/{{ post.photo }}" alt="{{  }}"/>
-					</figure>
-				</li>
-				{% endfor %}
+					<img src="/img/thumb/{{ post.photo }}" alt="{{  }}"/>
+				</figure>
+			</li>
+			{% endfor %}
 
-			</ul>
-		</section><!-- // grid-wrap -->
+		</ul>
+	</section><!-- // grid-wrap -->
 
-		<section class="slideshow">
-			<ul>
-				{% for post in site.posts %}
-				<li>
-					<figure>
-						<!-- <img src="{{ site.url }}/img/large/{{ post.photo }}" alt="{{ post.caption_header }}"/> -->
+	<section class="slideshow">
+		<ul>
+			{% for post in site.posts %}
+			<li>
+				<figure>
+					<!-- <img src="{{ site.url }}/img/large/{{ post.photo }}" alt="{{ post.caption_header }}"/> -->
 
-						<img src="/img/large/{{ post.photo }}" alt="{{ post.caption_header }}"/>
+					<img src="/img/large/{{ post.photo }}" alt="{{ post.caption_header }}"/>
 						<!--<figcaption>
 						 <h3>{{ post.caption_header }}</h3>
 						<p>{{ post.caption }}</p>
@@ -57,4 +56,3 @@ layout: default
 	</section><!-- // slideshow -->
 
 </div><!-- // grid-gallery -->
-</div>

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ site.name }}</title>
-    <meta name="description" content="{{ site.name }} - Model & Actress - Model und Schauspielerin" />
-    <meta name="keywords" content="model, photography, anne muehlmeier, anne mühlmeier, die wilden kerle, actress, schauspielerin" />
-    <meta name="author" content="Dan Bender" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.name }}</title>
+  <meta name="description" content="{{ site.name }} - Model & Actress - Model und Schauspielerin" />
+  <meta name="keywords" content="model, photography, anne muehlmeier, anne mühlmeier, die wilden kerle, actress, schauspielerin" />
+  <meta name="author" content="Dan Bender" />
 
     <!-- <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/main.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/component.css" />
@@ -19,7 +19,13 @@
   </head>
   <body>
 
-  {{ content }}
+<div class="container">
+
+    {{ content }}
+
+    <a href="#" id="impressum">Impressum</a>
+</div>
+
 
     <!--  <script src="{{ site.url }}/js/imagesloaded.pkgd.min.js"></script>
     <script src="{{ site.url }}/js/masonry.pkgd.min.js"></script>
@@ -34,4 +40,4 @@
       new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
     </script>
   </body>
-</html>
+  </html>
