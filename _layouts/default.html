@@ -18,13 +18,23 @@
     <script src="/js/modernizr.custom.js"></script>
   </head>
   <body>
+    <div class="container">
+      <header class="clearfix">
+      <a href="/"><h1>{{ site.name }}</h1></a>
+        <nav class="">
+          <ul>
+            <li><a href="/">Portfolio</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="http://annemuehlmeier.tumblr.com/" target="_blank">News</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
-<div class="container">
+      {{ content }}
 
-    {{ content }}
-
-    <a href="#" id="impressum">Impressum</a>
-</div>
+      <a href="#" id="impressum">Impressum</a>
+    </div>
 
 
     <!--  <script src="{{ site.url }}/js/imagesloaded.pkgd.min.js"></script>
