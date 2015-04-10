@@ -17,6 +17,12 @@ a {
 	color: #000;
 }
 
+.container {
+	margin: 0 auto;
+	width: 90%;
+	max-width: 69em;
+}
+
 .container > header {
 	width: 100%;
 	max-width: 69em;
@@ -54,6 +60,11 @@ a:visited {
 }
 
 /* Impressum */
+
+.static_page_container {
+	text-align: center;
+
+}
 
 #impressum {
 	font-size: 70%;
