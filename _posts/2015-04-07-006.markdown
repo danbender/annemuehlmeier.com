@@ -1,0 +1,7 @@
+---
+layout: default
+date:   2015-04-07 08:06:00
+photo: 006.jpg
+caption_header: Sample header
+caption: sample caption
+---
