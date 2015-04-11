@@ -3,7 +3,7 @@ layout: default
 category:
 - video
 date:   2015-04-01 08:00:00
-video_name: 112316590
+video_id: 112316590
 caption_header: Sample header
 caption: sample caption
 ---
