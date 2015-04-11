@@ -4,6 +4,6 @@ date:   2015-04-07 08:11:00
 photo: 011.jpg
 caption_header: Sample header
 caption: sample caption
-categories:
+category:
 - portfolio
 ---
