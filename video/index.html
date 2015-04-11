@@ -10,10 +10,11 @@ layout: default
 
       {% for post in site.categories['video'] reversed %}
       <li>
-        <video width="320" height="240" controls>
-          <source src="https://player.vimeo.com/video/{{ post.video_name }}?api=1" type="video/mp4">
-        </video>
-      </li>
+        <li>
+          <figure>
+            <img src="{{ site.url }}/img/thumb/{{ post.photo }}" alt="{{ }}"/>
+          </figure>
+        </li>
         {% endfor %}
       </ul>
     </section>
@@ -24,18 +25,18 @@ layout: default
         <li>
           <video width="100%" height="auto" controls>
             <source src="https://player.vimeo.com/video/{{ post.video_name }}?api=1" type="video/mp4">
-          </video>
-        </li>
-        {% endfor %}
-      </ul>
-    <nav>
-      <span class="icon nav-prev"></span>
-      <span class="icon nav-next"></span>
-      <span class="icon nav-close" id="close"></span>
-    </nav>
+            </video>
+          </li>
+          {% endfor %}
+        </ul>
+        <nav>
+          <span class="icon nav-prev"></span>
+          <span class="icon nav-next"></span>
+          <span class="icon nav-close" id="close"></span>
+        </nav>
 
-  </section>
+      </section>
 
-</div>
+    </div>
 
-<a href="/impressum/" id="impressum">Impressum</a>
+    <a href="/impressum/" id="impressum">Impressum</a>
