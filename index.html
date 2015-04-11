@@ -11,13 +11,10 @@ layout: default
 			{% for post in site.categories['portfolio'] reversed %}
 			<li>
 				<figure>
-					<!-- <img src="{{ site.url }}/img/thumb/{{ post.photo }}" alt="{{  }}"/> -->
-
-					<img src="/img/thumb/{{ post.photo }}" alt="{{  }}"/>
+					<img src="{{ site.url }}/img/thumb/{{ post.photo }}" alt="{{ }}"/>
 				</figure>
 			</li>
 			{% endfor %}
-
 		</ul>
 	</section>
 
@@ -26,9 +23,7 @@ layout: default
 			{% for post in site.categories['portfolio'] reversed %}
 			<li>
 				<figure>
-					<!-- <img src="{{ site.url }}/img/large/{{ post.photo }}" alt="{{ post.caption_header }}"/> -->
-
-					<img src="/img/large/{{ post.photo }}" alt="{{ post.caption_header }}"/>
+					<img src="{{ site.url }}/img/large/{{ post.photo }}" alt="{{ post.caption_header }}"/>
 						<!--<figcaption>
 						 <h3>{{ post.caption_header }}</h3>
 						<p>{{ post.caption }}</p>

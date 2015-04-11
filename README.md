@@ -1,5 +1,3 @@
-Localhost deployment
-=========
-`jekyll build` followed by `jekyll serve`
+Jekyll portfolio of model/actress anne muehlmeier (www.annemuehlmeier.com)
 
-For more details, read [documentation](http://jekyllrb.com/)
+[documentation](http://jekyllrb.com/)
