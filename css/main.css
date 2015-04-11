@@ -66,6 +66,15 @@ a:visited {
 
 }
 
+.small-text {
+	font-size: 70%;
+}
+
+.half-width {
+	width: 51%;
+  margin: 0 auto;
+}
+
 #impressum {
 	font-size: 70%;
 	width: 100%;
