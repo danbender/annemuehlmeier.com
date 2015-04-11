@@ -1,8 +1,8 @@
 name: Anne Muehlmeier
 markdown: redcarpet
 highlighter: true
-permalink: /portfolio/:caption_header/:photo/ #/:year/:month/:title/
-url: http://127.0.0.1:4000/ # http://nadjetey.github.io/GridGallery/
+permalink: /:category/:title #/:year/:month/:title/
+url: http://www.annemuehlmeier.com/
 author:
     name: Dan Bender
     twitter: https://twitter.com/thedanbender
