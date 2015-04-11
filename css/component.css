@@ -167,6 +167,14 @@
 		margin: 0 auto !important;
 	}
 
+	.current_video {
+		position: absolute !important;
+		left: 12.5% !important;
+		top: 25% !important;
+		margin: 0 auto !important;
+	}
+
+
 
 	/* Navigation */
 	.slideshow nav span {
