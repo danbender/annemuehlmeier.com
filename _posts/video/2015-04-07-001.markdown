@@ -1,0 +1,9 @@
+---
+layout: default
+categories:
+- video
+date:   2015-04-01 08:01:00
+video: https://vimeo.com/105956565
+caption_header: Sample header
+caption: sample caption
+---
