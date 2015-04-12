@@ -19,6 +19,20 @@
 		margin: 0;
 	}
 
+	.video-figure {
+		position: relative;
+	}
+
+	.video-title {
+		width: 50%;
+		position: absolute;
+		left:25%;
+		top:47%;
+		color: #000;
+		text-align: center;
+		display: none;
+	}
+
 	.grid-gallery figure img {
 		margin: 0 auto;
 		display: block;
@@ -26,7 +40,7 @@
 		max-height: 100%;
 	}
 
-	img.videoThumbs {
+	img.video-thumbs {
 		width: 238px;
 		height: 134px;
 	}
