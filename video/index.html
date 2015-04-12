@@ -5,37 +5,68 @@ layout: default
 <div id="grid-gallery" class="grid-gallery">
 
   <section class="grid-wrap">
-    <ul class="grid">
+    <ul class="grid" id="thumbnailsContainer">
       <li class="grid-sizer"></li><!-- for Masonry column width -->
 
+    </ul>
+  </section>
+
+  <section class="slideshow">
+    <ul>
       {% for post in site.categories['video'] reversed %}
       <li>
-        <li>
-          <figure>
-            <!-- <img src="{{ site.url }}/img/thumb/{{ post.photo }}" alt="{{ }}"/> -->
-            <img src="/img/thumb/video/{{ post.photo }}" alt="{{ }}"/>
-          </figure>
-        </li>
-        {% endfor %}
-      </ul>
-    </section>
-
-    <section class="slideshow">
-      <ul>
-        {% for post in site.categories['video'] reversed %}
-        <li>
         <iframe class="current_video" src="https://player.vimeo.com/video/{{ post.video_id }}" width="75%" height="42%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </li>
-          {% endfor %}
-        </ul>
-        <nav>
-          <span class="icon nav-prev"></span>
-          <span class="icon nav-next"></span>
-          <span class="icon nav-close" id="close"></span>
-        </nav>
+      </li>
+      {% endfor %}
+    </ul>
+    <nav>
+      <span class="icon nav-prev"></span>
+      <span class="icon nav-next"></span>
+      <span class="icon nav-close" id="close"></span>
+    </nav>
 
-      </section>
+  </section>
 
-    </div>
+</div>
 
-    <a href="/impressum/" id="impressum">Impressum</a>
+<a href="/impressum/" id="impressum">Impressum</a>
+
+
+<script>
+  var vimeoUserName = 'user5343300';
+  var callback = 'showThumbs';
+  var url = 'http://vimeo.com/api/v2/' + vimeoUserName + '/videos.json?callback=' + callback;
+
+  function init() {
+    var js = document.createElement('script');
+    js.setAttribute('type', 'text/javascript');
+    js.setAttribute('src', url);
+    document.getElementsByTagName('head').item(0).appendChild(js);
+  }
+
+  function showThumbs(videos) {
+    var thumbnailsContainer = document.getElementById('thumbnailsContainer');
+
+    for (var i = 0; i < videos.length; i++) {
+      var listItem = document.createElement('li');
+
+      var figure = document.createElement('figure');
+
+      var thumbImage = document.createElement('img');
+      thumbImage.className = "videoThumbs";
+      thumbImage.setAttribute('src', videos[i].thumbnail_large);
+      thumbImage.setAttribute('alt', videos[i].title);
+      thumbImage.setAttribute('title', videos[i].title);
+
+      // var a = document.createElement('a');
+      // a.setAttribute('href', videos[i].url);
+      // a.appendChild(document.createTextNode(videos[i].title));
+
+      listItem.appendChild(figure).appendChild(thumbImage);
+
+      thumbnailsContainer.appendChild(listItem);
+    }
+  }
+
+  window.onload = init;
+  </script>
