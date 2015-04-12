@@ -33,15 +33,15 @@ layout: default
 
 
 <script>
-  var vimeoUserName = 'user5343300';
+  var channelName = '342001';
   var callback = 'showThumbs';
-  var url = 'http://vimeo.com/api/v2/' + vimeoUserName + '/videos.json?callback=' + callback;
+  var url = 'http://vimeo.com/api/v2/channel/' + channelName + '/videos.json?callback=' + callback;
 
   function init() {
-    var js = document.createElement('script');
-    js.setAttribute('type', 'text/javascript');
-    js.setAttribute('src', url);
-    document.getElementsByTagName('head').item(0).appendChild(js);
+    var setScript = document.createElement('script');
+    setScript.setAttribute('type', 'text/javascript');
+    setScript.setAttribute('src', url);
+    document.getElementsByTagName('head').item(0).appendChild(setScript);
   }
 
   function showThumbs(videos) {
@@ -49,7 +49,6 @@ layout: default
 
     for (var i = 0; i < videos.length; i++) {
       var listItem = document.createElement('li');
-
       var figure = document.createElement('figure');
 
       var thumbImage = document.createElement('img');
@@ -58,15 +57,17 @@ layout: default
       thumbImage.setAttribute('alt', videos[i].title);
       thumbImage.setAttribute('title', videos[i].title);
 
-      // var a = document.createElement('a');
-      // a.setAttribute('href', videos[i].url);
+      var videoName = document.createElement('span');
+      videoName.appendChild(document.createTextNode(videos[i].title));
+
+      // videoName.setAttribute('href', videos[i].url);
       // a.appendChild(document.createTextNode(videos[i].title));
 
       listItem.appendChild(figure).appendChild(thumbImage);
 
-      thumbnailsContainer.appendChild(listItem);
+      thumbnailsContainer.appendChild(listItem).appendChild(videoName);
     }
   }
 
   window.onload = init;
-  </script>
+</script>
