@@ -9,7 +9,6 @@
 	font-style: normal;
 	} /* Made with http://icomoon.io/app */
 
-	/* General style */
 	.grid-gallery ul {
 		list-style: none;
 		margin: 0;
@@ -225,9 +224,9 @@
 		content: "\e601";
 	}
 
-	/*span.nav-next:before  {
+	span.nav-next:before  {
 		content: "\e600";
-		}*/
+		}
 
 		span.nav-close:before {
 			content: "\e602";

@@ -1,8 +1,8 @@
 ---
 layout: default
 date: 2015-04-01 08:00:00
-photo: bench.jpg
-video_id: 112316590
+photo:
+video_id:
 caption_header: Sample header
 caption: sample caption
 category:
