@@ -3,35 +3,35 @@ layout: default
 ---
 
 <script>
-      var channelName = '342001';
-      var callback = 'showThumbs';
-      var url = 'http://vimeo.com/api/v2/channel/' + channelName + '/videos.json?callback=' + callback;
+  var channelName = '342001';
+  var callback = 'showThumbs';
+  var url = 'http://vimeo.com/api/v2/channel/' + channelName + '/videos.json?callback=' + callback;
 
-      function init() {
-        var setScript = document.createElement('script');
-        setScript.setAttribute('type', 'text/javascript');
-        setScript.setAttribute('src', url);
-        document.getElementsByTagName('head').item(0).appendChild(setScript);
-      }
+  function init() {
+    var setScript = document.createElement('script');
+    setScript.setAttribute('type', 'text/javascript');
+    setScript.setAttribute('src', url);
+    document.getElementsByTagName('head').item(0).appendChild(setScript);
+  }
 
-      function showThumbs(videos) {
-        var thumbnailsContainer = document.getElementById('thumbnailsContainer');
+  function showThumbs(videos) {
+    var thumbnailsContainer = document.getElementById('thumbnailsContainer');
 
-        for (var i = 0; i < videos.length; i++) {
-          var listItem = document.createElement('li');
-          listItem.className = "video-figure";
+    for (var i = 0; i < videos.length; i++) {
+      var listItem = document.createElement('li');
+      listItem.className = "video-figure";
 
-          var figure = document.createElement('figure');
+      var figure = document.createElement('figure');
 
-          var thumbImage = document.createElement('img');
-          thumbImage.className = "video-thumbs";
-          thumbImage.setAttribute('src', videos[i].thumbnail_large);
-          thumbImage.setAttribute('alt', videos[i].title);
-          thumbImage.setAttribute('title', videos[i].title);
+      var thumbImage = document.createElement('img');
+      thumbImage.className = "video-thumbs";
+      thumbImage.setAttribute('src', videos[i].thumbnail_large);
+      thumbImage.setAttribute('alt', videos[i].title);
+      thumbImage.setAttribute('title', videos[i].title);
 
-          var videoName = document.createElement('span');
-          videoName.className = "video-title";
-          videoName.appendChild(document.createTextNode(videos[i].title));
+      var videoName = document.createElement('span');
+      videoName.className = "video-title";
+      videoName.appendChild(document.createTextNode(videos[i].title));
 
       // videoName.setAttribute('href', videos[i].url);
       // a.appendChild(document.createTextNode(videos[i].title));
