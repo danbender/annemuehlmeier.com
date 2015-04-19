@@ -86,26 +86,36 @@ a:visited {
 /* Contact */
 
 .contact {
-	width: 50%;
+	width: 75%;
 	margin: 0 auto;
+}
+
+.img-hold, .text-hold {
+	width: 100%;
+}
+
+.text-hold {
+	margin-top: 5%;
 }
 
 #contact-profile {
 	width: 200px;
 	height: auto;
-	float: left;
-	margin-right: 7%;
 	border-radius: 50%;
 }
 
 .contact h2, .contact p, .contact a {
-	text-align: left;
-	line-height: 130%;
+	width: 45%;
+	margin: 0 auto;
+	line-height: 150%;
 }
 
 .contact a#email {
-	float: left;
 	font-weight: bold;
+}
+
+.contact a#email .host::before {
+	content:"mail@"
 }
 
 .contact .pe-7s-smile, .contact .pe-7s-angle-right {
@@ -124,7 +134,6 @@ a:visited {
 	bottom: 0px;
 	left:45%;
 	text-align: center;
-
 }
 
 @media screen and (max-width: 55em) {
@@ -158,4 +167,5 @@ a:visited {
 		padding: 0 auto;
 		margin: 0 auto;
 	}
+
 }
