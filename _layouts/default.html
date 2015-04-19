@@ -9,45 +9,66 @@
   <meta name="keywords" content="model, photography, anne muehlmeier, anne mühlmeier, die wilden kerle, actress, schauspielerin" />
   <meta name="author" content="Dan Bender" />
 
-    <!-- <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/main.css" />
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/component.css" />
-    <script src="{{ site.url }}/js/modernizr.custom.js"></script> -->
+  <!-- <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/component.css" />
+  <script src="{{ site.url }}/js/modernizr.custom.js"></script> -->
 
-    <link rel="stylesheet" type="text/css" href="/css/main.css" />
-    <link rel="stylesheet" type="text/css" href="/css/component.css" />
-    <script src="/js/modernizr.custom.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <header class="clearfix">
-        <a href="/"><h1>{{ site.name }}</h1></a>
-        <nav class="">
-          <ul>
-            <li><a href="/">Portfolio</a></li>
-            <li><a href="/video">Video</a></li>
-            <li><a href="http://annemuehlmeier.tumblr.com/" target="_blank">News</a></li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+  <link rel="stylesheet" type="text/css" href="/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="/css/component.css" />
+  <script src="/js/modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header class="clearfix">
+      <a href="/"><h1>{{ site.name }}</h1></a>
+      <nav class="">
+        <ul>
+          <li><a href="/">Portfolio</a></li>
+          <li><a href="/video">Video</a></li>
+          <li><a href="http://annemuehlmeier.tumblr.com/" target="_blank">News</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      {{ content }}
+    {{ content }}
 
-    </div>
+  </div>
 
 
-    <!--  <script src="{{ site.url }}/js/imagesloaded.pkgd.min.js"></script>
-    <script src="{{ site.url }}/js/masonry.pkgd.min.js"></script>
-    <script src="{{ site.url }}/js/classie.js"></script>
-    <script src="{{ site.url }}/js/cbpGridGallery.js"></script> -->
+  <!--  <script src="{{ site.url }}/js/imagesloaded.pkgd.min.js"></script>
+  <script src="{{ site.url }}/js/masonry.pkgd.min.js"></script>
+  <script src="{{ site.url }}/js/classie.js"></script>
+  <script src="{{ site.url }}/js/cbpGridGallery.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="/js/imagesloaded.pkgd.min.js"></script>
+  <script src="/js/masonry.pkgd.min.js"></script>
+  <script src="/js/classie.js"></script>
+  <script src="/js/cbpGridGallery.js"></script>
+  <script src="/js/froogaloop.min.js"></script>
+  <script>
+    new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+  </script>
+  <script >
+    function pauseAll() {
+        $('iframe[src*="vimeo.com"]').each(function () {
+            $f(this).api('pause');
+        });
+    }
 
-    <script src="/js/imagesloaded.pkgd.min.js"></script>
-    <script src="/js/masonry.pkgd.min.js"></script>
-    <script src="/js/classie.js"></script>
-    <script src="/js/cbpGridGallery.js"></script>
-    <script>
-      new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
-    </script>
+    var closeButton = document.getElementById("close");
+    var prevButton = document.getElementById("prev");
+    var nextButton = document.getElementById("next");
 
+    closeButton.addEventListener("click", function() {
+      pauseAll();
+    });
+    prevButton.addEventListener("click", function() {
+      pauseAll();
+    });
+    nextButton.addEventListener("click", function() {
+      pauseAll();
+    });
+  </script>
 </body>
 </html>
