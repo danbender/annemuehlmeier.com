@@ -9,7 +9,6 @@
 	font-style: normal;
 	} /* Made with http://icomoon.io/app */
 
-	/* General style */
 	.grid-gallery ul {
 		list-style: none;
 		margin: 0;
@@ -20,12 +19,30 @@
 		margin: 0;
 	}
 
+	.video-figure {
+		position: relative;
+	}
+
+	.video-title {
+		width: 50%;
+		position: absolute;
+		left:25%;
+		top:47%;
+		color: #000;
+		text-align: center;
+		/*display: none;*/
+	}
+
 	.grid-gallery figure img {
 		margin: 0 auto;
 		display: block;
 		max-width: 100%;
 		max-height: 100%;
+	}
 
+	img.video-thumbs {
+		width: 238px;
+		height: 134px;
 	}
 
 	.grid-gallery figcaption h3 {
@@ -167,6 +184,13 @@
 		margin: 0 auto !important;
 	}
 
+	.current_video {
+		position: absolute !important;
+		left: 12.5% !important;
+		top: 25% !important;
+		margin: 0 auto !important;
+	}
+
 
 	/* Navigation */
 	.slideshow nav span {
@@ -216,65 +240,65 @@
 
 	span.nav-next:before  {
 		content: "\e600";
-	}
-
-	span.nav-close:before {
-		content: "\e602";
-	}
-
-
-	@media screen and (max-width: 60em) {
-		.grid li {
-			width: 33.3%;
 		}
 
-		.slideshow li {
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			margin: 0;
+		span.nav-close:before {
+			content: "\e602";
 		}
 
-		.slideshow li figure img {
-			width: auto;
-			margin: 0 auto;
-			max-width: 100%;
-			height: auto;
+
+		@media screen and (max-width: 60em) {
+			.grid li {
+				width: 33.3%;
+			}
+
+			.slideshow li {
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				margin: 0;
+			}
+
+			.slideshow li figure img {
+				width: auto;
+				margin: 0 auto;
+				max-width: 100%;
+				height: auto;
+			}
+
+			.slideshow nav span,
+			.slideshow nav span.nav-close {
+				font-size: 1.8em;
+				padding: 0.3em;
+			}
+
+			.info-keys {
+				display: none;
+			}
+
 		}
 
-		.slideshow nav span,
-		.slideshow nav span.nav-close {
-			font-size: 1.8em;
-			padding: 0.3em;
+		@media screen and (max-width: 35em) {
+			.grid li {
+				width: 50%;
+			}
+
+			.slideshow {
+				background: rgba(255,255,255,1);
+			}
+
+			.slideshow li:after {
+				background: rgba(255,255,255,1);
+			}
+
+			.slideshow nav span.nav-prev, .slideshow nav span.nav-next {
+				top: 35%;
+			}
 		}
 
-		.info-keys {
-			display: none;
+		@media screen and (max-width: 24em) {
+			.grid li {
+				width: 100%;
+			}
 		}
-
-	}
-
-	@media screen and (max-width: 35em) {
-		.grid li {
-			width: 50%;
-		}
-
-		.slideshow {
-			background: rgba(255,255,255,1);
-		}
-
-		.slideshow li:after {
-			background: rgba(255,255,255,1);
-		}
-
-		.slideshow nav span.nav-prev, .slideshow nav span.nav-next {
-			top: 35%;
-		}
-	}
-
-	@media screen and (max-width: 24em) {
-		.grid li {
-			width: 100%;
-		}
-	}
