@@ -2,7 +2,7 @@ name: Anne Muehlmeier
 markdown: redcarpet
 highlighter: pygments
 permalink: /:category/:title #/:year/:month/:title/
-url: http://127.0.0.1:4000 #http://danbender.github.io/annemuehlmeier/ #http://www.annemuehlmeier.com/
+url: http://danbender.github.io/annemuehlmeier/ #http://www.annemuehlmeier.com/
 author:
     name: Dan Bender
     twitter: https://twitter.com/thedanbender
