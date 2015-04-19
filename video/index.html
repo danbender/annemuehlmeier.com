@@ -2,77 +2,33 @@
 layout: default
 ---
 
-<script>
-  var channelName = '342001';
-  var callback = 'showThumbs';
-  var url = 'http://vimeo.com/api/v2/channel/' + channelName + '/videos.json?callback=' + callback;
-
-  function init() {
-    var setScript = document.createElement('script');
-    setScript.setAttribute('type', 'text/javascript');
-    setScript.setAttribute('src', url);
-    document.getElementsByTagName('head').item(0).appendChild(setScript);
-  }
-
-  function showThumbs(videos) {
-    var thumbnailsContainer = document.getElementById('thumbnailsContainer');
-
-    for (var i = 0; i < videos.length; i++) {
-      var listItem = document.createElement('li');
-      listItem.className = "video-figure";
-
-      var figure = document.createElement('figure');
-
-      var thumbImage = document.createElement('img');
-      thumbImage.className = "video-thumbs";
-      thumbImage.setAttribute('src', videos[i].thumbnail_large);
-      thumbImage.setAttribute('alt', videos[i].title);
-      thumbImage.setAttribute('title', videos[i].title);
-
-      var videoName = document.createElement('span');
-      videoName.className = "video-title";
-      videoName.appendChild(document.createTextNode(videos[i].title));
-
-      // videoName.setAttribute('href', videos[i].url);
-      // a.appendChild(document.createTextNode(videos[i].title));
-
-      listItem.appendChild(figure).appendChild(thumbImage);
-
-
-      console.log(videos[i].id);
-
-
-      thumbnailsContainer.appendChild(listItem).appendChild(videoName);
-    }
-  }
-
-  // function changeDumbTitles(videos) {
-  //   for (var i = 0; i < videos.length; i++) {
-  //     if(videos[i].title == "BRIXTONBOOGIE - Love ain't just a word") {
-  //       span.html = "BRIXTONBOOGIE";
-  //     };
-  //   }
-  // }
-
-  window.onload = init;
-</script>
-
 <div id="grid-gallery" class="grid-gallery">
 
   <section class="grid-wrap">
-    <ul class="grid" id="thumbnailsContainer">
+    <ul class="grid">
       <li class="grid-sizer"></li><!-- for Masonry column width -->
 
+      {% for vimeo in site.data.vimeo %}
+      <li>
+        <figure class="video-figure">
+          <img class="video-thumbs" src="{{ vimeo.thumbnail_medium }}" alt="{{ vimeo.title}}"/>
+        </figure>
+        <span class="video-title">{{ vimeo.title }}</span>
+      </li>
+      {% endfor %}
     </ul>
   </section>
 
   <section class="slideshow">
     <ul>
+      {% for vimeo in site.data.vimeo %}
       <li>
-        <iframe class="current_video" src="" width="75%" height="42%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <figure>
+          <iframe class="current_video" src="https://player.vimeo.com/video/{{ vimeo.id }}" width="75%" height="42%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </figure>
       </li>
+      {% endfor %}
     </ul>
-
     <nav>
       <span class="icon nav-prev"></span>
       <span class="icon nav-next"></span>
