@@ -163,13 +163,11 @@
 		if( this.prevItem ) {
 			classie.addClass( this.prevItem, 'show' );
 			var translateVal = Number( -1 * ( getViewportW() / 2 + this.prevItem.offsetWidth / 2 ) );
-			console.log("prev " + translateVal);
 			setTransform( this.prevItem, support.support3d ? 'translate3d(' + translateVal + 'px, 0, -150px)' : 'translate(' + translateVal + 'px)' );
 		}
 		if( this.nextItem ) {
 			classie.addClass( this.nextItem, 'show' );
 			var translateVal = Number( getViewportW() / 2 + this.nextItem.offsetWidth / 2 );
-			console.log("next " + translateVal);
 
 			setTransform( this.nextItem, support.support3d ? 'translate3d(' + translateVal + 'px, 0, -150px)' : 'translate(' + translateVal + 'px)' );
 		}

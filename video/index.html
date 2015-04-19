@@ -11,7 +11,7 @@ layout: default
       {% for vimeo in site.data.vimeo %}
       <li>
         <figure class="video-figure">
-          <img class="video-thumbs" src="{{ vimeo.thumbnail_medium }}" alt="{{ vimeo.title}}"/>
+          <img class="video-thumbs" src="{{ vimeo.thumbnail_large }}" alt="{{ vimeo.title}}"/>
         </figure>
         <span class="video-title">{{ vimeo.title }}</span>
       </li>
@@ -24,17 +24,16 @@ layout: default
       {% for vimeo in site.data.vimeo %}
       <li>
         <figure>
-          <iframe class="current_video" src="https://player.vimeo.com/video/{{ vimeo.id }}" width="75%" height="42%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <iframe id="current_video" src="http://player.vimeo.com/video/{{ vimeo.id }}?api=1&color=ffffff&title=0&byline=0&portrait=0" width="68%" height="56%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </figure>
       </li>
       {% endfor %}
     </ul>
     <nav>
-      <span class="icon nav-prev"></span>
-      <span class="icon nav-next"></span>
-      <span class="icon nav-close" id="close"></span>
+      <span class="nav-prev pe-7s-angle-left" id="prev"></span>
+      <span class="nav-next pe-7s-angle-right" id="next"></span>
+      <span class="nav-close pe-7s-close" id="close"></span>
     </nav>
-
   </section>
 
 </div>
