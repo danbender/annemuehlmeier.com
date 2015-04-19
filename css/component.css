@@ -184,7 +184,7 @@
 		margin: 0 auto !important;
 	}
 
-	.current_video {
+	#current_video {
 		position: absolute !important;
 		left: 16% !important;
 		top: 22% !important;
