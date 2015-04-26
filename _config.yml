@@ -1,8 +1,8 @@
 name: Anne Muehlmeier
 markdown: redcarpet
 highlighter: pygments
-permalink: /:category/:title #/:year/:month/:title/
-url: http://danbender.github.io/annemuehlmeier #http://www.annemuehlmeier.com/
+permalink: /:year/:month/:title/
+url: http://www.annemuehlmeier.com/
 author:
     name: Dan Bender
     twitter: https://twitter.com/thedanbender
