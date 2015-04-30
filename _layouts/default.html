@@ -23,7 +23,7 @@
 
   ga('create', 'UA-62037883-1', 'auto');
   ga('send', 'pageview');
-  ga(‘set’, ‘&uid’, {{USER_ID}});
+  // ga(‘set’, ‘&uid’, {{USER_ID}});
 </script>
   <div class="container">
     <header class="clearfix">
@@ -41,36 +41,35 @@
     {{ content }}
 
   </div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="{{ site.url }}/js/imagesloaded.pkgd.min.js"></script>
-  <script src="{{ site.url }}/js/masonry.pkgd.min.js"></script>
-  <script src="{{ site.url }}/js/classie.js"></script>
-  <script src="{{ site.url }}/js/cbpGridGallery.js"></script>
-  <script src="{{ site.url }}/js/froogaloop.min.js"></script>
-  <script>
-    new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
-  </script>
-  <script >
-    function pauseAll() {
-        $('iframe[src*="vimeo.com"]').each(function () {
-            $f(this).api('pause');
-        });
-    }
-
-    var closeButton = document.getElementById("close");
-    var prevButton = document.getElementById("prev");
-    var nextButton = document.getElementById("next");
-
-    closeButton.addEventListener("click", function() {
-      pauseAll();
-    });
-    prevButton.addEventListener("click", function() {
-      pauseAll();
-    });
-    nextButton.addEventListener("click", function() {
-      pauseAll();
-    });
-  </script>
 </body>
+<script src="{{ site.url }}/js/jquery-1.11.2.min.js"></script>
+<script src="{{ site.url }}/js/imagesloaded.pkgd.min.js"></script>
+<script src="{{ site.url }}/js/masonry.pkgd.min.js"></script>
+<script src="{{ site.url }}/js/classie.js"></script>
+<script src="{{ site.url }}/js/cbpGridGallery.js"></script>
+<script src="{{ site.url }}/js/froogaloop.min.js"></script>
+<script>
+  new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+</script>
+<script>
+  function pauseAll() {
+    $('iframe[src*="vimeo.com"]').each(function() {
+      $f(this).api('pause');
+    });
+  }
+
+  var closeButton = document.getElementById("close");
+  var prevButton = document.getElementById("prev");
+  var nextButton = document.getElementById("next");
+
+  closeButton.addEventListener("click", function() {
+    pauseAll();
+  });
+  prevButton.addEventListener("click", function() {
+    pauseAll();
+  });
+  nextButton.addEventListener("click", function() {
+    pauseAll();
+  });
+</script>
 </html>
