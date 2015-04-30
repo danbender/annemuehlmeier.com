@@ -167,4 +167,18 @@ a:visited {
 		padding: 0 auto;
 		margin: 0 auto;
 	}
+
+	.half-width {
+		width: 90%;
+		text-align: justify;
+		padding-bottom: 50px;
+	}
+
+	.contact {
+		width: 90%;
+	}
+
+	.contact h2, .contact p, .contact a {
+		width: 100%;
+	}
 }
