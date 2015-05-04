@@ -8,6 +8,7 @@
   <meta name="description" content="{{ site.name }} - Model & Actress - Model und Schauspielerin" />
   <meta name="keywords" content="model, photography, fotografie, fotomodel, schauspielerin, actress, anne muehlmeier, anne mühlmeier, die wilden kerle" />
   <meta name="author" content="Dan Bender" />
+  <link rel="icon" href="{{ site.url }}/img/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/main.css" />
   <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/pe-icon-7-stroke.css" />
   <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/helper.css" />
@@ -42,4 +43,38 @@
 
   </div>
 </body>
+<<<<<<< HEAD
 </html>
+=======
+<script src="{{ site.url }}/js/jquery-1.11.2.min.js"></script>
+<script src="{{ site.url }}/js/imagesloaded.pkgd.min.js"></script>
+<script src="{{ site.url }}/js/masonry.pkgd.min.js"></script>
+<script src="{{ site.url }}/js/classie.js"></script>
+<script src="{{ site.url }}/js/cbpGridGallery.js"></script>
+<script src="{{ site.url }}/js/froogaloop.min.js"></script>
+<script>
+  new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+</script>
+<script>
+  function pauseAll() {
+    $('iframe[src*="vimeo.com"]').each(function() {
+      $f(this).api('pause');
+    });
+  }
+
+  var closeButton = document.getElementById("close");
+  var prevButton = document.getElementById("prev");
+  var nextButton = document.getElementById("next");
+
+  closeButton.addEventListener("click", function() {
+    pauseAll();
+  });
+  prevButton.addEventListener("click", function() {
+    pauseAll();
+  });
+  nextButton.addEventListener("click", function() {
+    pauseAll();
+  });
+</script>
+</html>
+>>>>>>> gh-pages
