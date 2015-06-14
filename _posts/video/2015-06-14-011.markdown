@@ -1,0 +1,9 @@
+---
+layout: default
+date:   2015-04-07 08:05:00
+video_id: 63692575
+thumb: 63692575.jpg
+video_title: BRIXTONBOOGIE - Love ain't just a word
+category:
+- video
+---

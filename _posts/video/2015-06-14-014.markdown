@@ -1,0 +1,9 @@
+---
+layout: default
+date:   2015-04-07 08:05:00
+video_id: 48254989
+thumb: 48254989.jpg
+video_title: Mercedes-Benz
+category:
+- video
+---
