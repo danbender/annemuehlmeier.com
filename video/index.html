@@ -8,12 +8,12 @@ layout: default
     <ul class="grid">
       <li class="grid-sizer"></li><!-- for Masonry column width -->
 
-      {% for vimeo in site.data.vimeo %}
+      {% for post in site.categories['video'] reversed %}
       <li>
-        <figure class="video-figure">
-          <img class="video-thumbs" src="{{ vimeo.thumbnail_large }}" alt="{{ vimeo.title}}"/>
+        <figure>
+          <img src="{{ site.url }}/portfolio/video/{{ post.thumb }}" alt="{{ Anne Muehlmeier - Model und Schauspielerin }}"/>
         </figure>
-        <span class="video-title">{{ vimeo.title }}</span>
+        <span class="video-title">{{ post.video_title }}</span>
       </li>
       {% endfor %}
     </ul>
@@ -21,17 +21,17 @@ layout: default
 
   <section class="slideshow">
     <ul>
-      {% for vimeo in site.data.vimeo %}
+      {% for post in site.categories['video'] reversed %}
       <li>
         <figure>
-          <iframe id="current_video" src="http://player.vimeo.com/video/{{ vimeo.id }}?api=1&color=ffffff&title=0&byline=0&portrait=0" width="68%" height="56%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <iframe id="current_video" src="http://player.vimeo.com/video/{{ post.video_id }}?api=1&color=ffffff&title=0&byline=0&portrait=0" width="68%" height="56%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </figure>
       </li>
       {% endfor %}
     </ul>
     <nav>
-      <span class="nav-prev pe-7s-angle-left" id="prev"></span>
-      <span class="nav-next pe-7s-angle-right" id="next"></span>
+      <span class="nav-prev pe-7s-angle-left"></span>
+      <span class="nav-next pe-7s-angle-right"></span>
       <span class="nav-close pe-7s-close" id="close"></span>
     </nav>
   </section>
@@ -51,26 +51,6 @@ layout: default
 <script >
   function pauseAll() {
     $('iframe[src*="vimeo.com"]').each(function () {
-      $f(this).api('pause');
-    });
-  }
-
-  var closeButton = document.getElementById("close");
-  var prevButton = document.getElementById("prev");
-  var nextButton = document.getElementById("next");
-
-  closeButton.addEventListener("click", function() {
-    pauseAll();
-  });
-  prevButton.addEventListener("click", function() {
-    pauseAll();
-  });
-  nextButton.addEventListener("click", function() {
-    pauseAll();
-  });
-
-  function pauseAll() {
-    $('iframe[src*="vimeo.com"]').each(function() {
       $f(this).api('pause');
     });
   }

@@ -11,7 +11,7 @@ layout: default
 			{% for post in site.categories['portfolio'] reversed %}
 			<li>
 				<figure>
-					<img src="{{ site.url }}/img/thumb/portfolio/{{ post.photo }}" alt="{{ Anne Muehlmeier - Model und Schauspielerin }}"/>
+					<img src="{{ site.url }}/portfolio/photo/thumb/portfolio/{{ post.photo }}" alt="{{ Anne Muehlmeier - Model und Schauspielerin }}"/>
 				</figure>
 			</li>
 			{% endfor %}
@@ -23,7 +23,7 @@ layout: default
 			{% for post in site.categories['portfolio'] reversed %}
 			<li>
 				<figure>
-					<img src="{{ site.url }}/img/large/portfolio/{{ post.photo }}" alt="{{ post.caption_header }}"/>
+					<img src="{{ site.url }}/portfolio/photo/large/portfolio/{{ post.photo }}" alt="{{ post.caption_header }}"/>
 				</figure>
 			</li>
 			{% endfor %}
