@@ -1,0 +1,9 @@
+---
+layout: default
+date:   2015-04-07 08:05:00
+photo: 005a.jpg
+caption_header: Sample header
+caption: sample caption
+category:
+- portfolio
+---
