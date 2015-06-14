@@ -2,7 +2,7 @@ name: Anne Muehlmeier
 markdown: redcarpet
 highlighter: pygments
 permalink: /:year/:month/:title/
-url: http://localhost:4000/ #http://annemuehlmeier.com #
+url: http://annemuehlmeier.com #http://localhost:4000/
 author:
     name: Dan Bender
     twitter: https://twitter.com/thedanbender
