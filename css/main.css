@@ -182,3 +182,14 @@ a:visited {
 		width: 100%;
 	}
 }
+
+/* Hide video on mobile as long as performance issues
+are not solved */
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+	.xs-hidden { display: none; }
+}
