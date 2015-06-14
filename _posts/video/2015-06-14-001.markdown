@@ -1,0 +1,9 @@
+---
+layout: default
+date:   2015-04-07 08:05:00
+video_id: 126837589
+thumb: 126837589.jpg
+video_title: Fabian Römer
+category:
+- video
+---

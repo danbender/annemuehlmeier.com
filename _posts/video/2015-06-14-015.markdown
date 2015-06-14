@@ -1,0 +1,9 @@
+---
+layout: default
+date:   2015-04-07 08:05:00
+video_id: 44197510
+thumb: 44197510.jpg
+video_title: BOSCH
+category:
+- video
+---

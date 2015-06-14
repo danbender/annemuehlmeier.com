@@ -1,0 +1,9 @@
+---
+layout: default
+date:   2015-04-07 08:05:00
+video_id: 48255939
+thumb: 48255939.jpg
+video_title: SCHILLER
+category:
+- video
+---
