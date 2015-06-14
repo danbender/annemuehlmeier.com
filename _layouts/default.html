@@ -51,26 +51,6 @@
 <script>
   new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
 </script>
-<script>
-  function pauseAll() {
-    $('iframe[src*="vimeo.com"]').each(function() {
-      $f(this).api('pause');
-    });
-  }
 
-  var closeButton = document.getElementById("close");
-  var prevButton = document.getElementById("prev");
-  var nextButton = document.getElementById("next");
-
-  closeButton.addEventListener("click", function() {
-    pauseAll();
-  });
-  prevButton.addEventListener("click", function() {
-    pauseAll();
-  });
-  nextButton.addEventListener("click", function() {
-    pauseAll();
-  });
-</script>
 </body>
 </html>
