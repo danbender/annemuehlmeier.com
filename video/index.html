@@ -8,7 +8,7 @@ layout: default
     <ul class="grid">
       <li class="grid-sizer"></li><!-- for Masonry column width -->
 
-      {% for post in site.categories['video'] reversed limit: 5 %}
+      {% for post in site.categories['video'] reversed limit: 4 %}
       <li>
         <figure>
           <img src="{{ site.url }}/portfolio/video/{{ post.thumb }}" alt="{{ Anne Muehlmeier - Model und Schauspielerin }}"/>
@@ -21,7 +21,7 @@ layout: default
 
   <section class="slideshow">
     <ul>
-      {% for post in site.categories['video'] reversed limit: 5 %}
+      {% for post in site.categories['video'] reversed limit: 4 %}
       <li>
         <figure>
           <iframe id="current_video" src="http://player.vimeo.com/video/{{ post.video_id }}?api=1&color=ffffff&title=0&byline=0&portrait=0" width="68%" height="56%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
