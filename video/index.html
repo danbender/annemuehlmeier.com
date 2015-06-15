@@ -40,9 +40,8 @@ layout: default
 
 <a href="{{ site.url }}/impressum/" id="impressum">Impressum</a>
 
-{% javascript zepto.min %}
-{% javascript froogaloop.min %}
-
+<script src="{{ site.url }}/assets/javascripts/zepto.min.js"></script>
+<script src="{{ site.url }}/assets/javascripts/froogaloop.min.js"></script>
 <script>
   function pauseAll() {
     $('iframe[src*="vimeo.com"]').each(function () {

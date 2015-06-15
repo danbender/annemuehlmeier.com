@@ -10,13 +10,10 @@
   <meta name="author" content="Dan Bender" />
   <link rel="icon" href="{{ site.url }}/portfolio/favicon.ico" type="image/x-icon" />
 
-  {% stylesheet main %}
-  {% stylesheet pe-icon-7-stroke %}
-  {% stylesheet helper %}
-  {% stylesheet component %}
-
-  {% javascript modernizr.custom %}
-
+  <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/stylesheets/main.css" />
+  <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/stylesheets/pe-icon-7-stroke.css" />
+  <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/stylesheets/helper.css" />
+  <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/stylesheets/component.css" />
   <style>
     @media only screen and (max-device-width: 667px)  {
       .xs-hidden {
@@ -24,6 +21,8 @@
       }
     }
   </style>
+
+  <script src="{{ site.url }}/assets/javascripts/modernizr.custom.js"></script>
 </head>
 <body>
   <script>
@@ -52,10 +51,11 @@
   {{ content }}
 
 </div>
-{% javascript imagesloaded.pkgd.min %}
-{% javascript masonry.pkgd.min %}
-{% javascript classie %}
-{% javascript cbpGridGallery %}
+
+<script src="{{ site.url }}/assets/javascripts/imagesloaded.pkgd.min.js"></script>
+<script src="{{ site.url }}/assets/javascripts/masonry.pkgd.min.js"></script>
+<script src="{{ site.url }}/assets/javascripts/classie.js"></script>
+<script src="{{ site.url }}/assets/javascripts/cbpGridGallery.js"></script>
 <script>
   new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
 </script>
