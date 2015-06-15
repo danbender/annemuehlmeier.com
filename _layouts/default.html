@@ -14,6 +14,14 @@
   <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/helper.css" />
   <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/component.css" />
   <script src="{{ site.url }}/js/modernizr.custom.js"></script>
+
+  <style>
+    @media only screen and (max-device-width: 667px)  {
+      .xs-hidden {
+        display: none !important;
+      }
+    }
+  </style>
 </head>
 <body>
   <script>
@@ -32,7 +40,7 @@
     <nav class="">
       <ul>
         <li><a href="{{ site.url }}">Portfolio</a></li>
-        <li class="xs-hidden"><a href="{{ site.url }}/video" class="xs-hidden">Video</a></li>
+        <li><a href="{{ site.url }}/video" class="xs-hidden">Video</a></li>
         <li><a href="http://blog.annemuehlmeier.com/" target="_blank">News</a></li>
         <li><a href="{{ site.url }}/contact">Contact</a></li>
       </ul>

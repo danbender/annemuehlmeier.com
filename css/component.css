@@ -241,12 +241,6 @@
   		height: auto;
   	}
 
-  	/*img.video-thumbs {
-  		width: 180px;
-  		height: 101px;
-  		overflow: auto;
-  	}*/
-
   	.slideshow nav span,
   	.slideshow nav span.nav-close {
   		font-size: 2.8em;
@@ -284,4 +278,11 @@
   	.grid li {
   		width: 100%;
   	}
+  }
+
+  @media only screen and (max-device-width: 667px)  {
+    .xs-hidden {
+      display: none !important;
+      color:red;
+    }
   }
