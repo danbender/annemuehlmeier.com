@@ -6,3 +6,62 @@ url: http://annemuehlmeier.com #http://localhost:4000/
 author:
     name: Dan Bender
     twitter: https://twitter.com/thedanbender
+
+
+#
+# Plugin: jekyll-assets
+#
+assets:
+  dirname: assets
+  baseurl: /assets/
+  sources:
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/images
+  js_compressor: uglifier
+  css_compressor: ~
+
+  autosize: false
+  #
+  # Sets cachebusting policy for generated assets.
+  #
+  # Possible variants:
+  #
+  #   none - disables cachebusting
+  #
+  #     source file:  _assets/javascripts/app.css
+  #     output file:  _site/assets/javascriptis/app.css
+  #     output URL:   /assets/javascripts/app.css
+  #
+  #   soft - leave filenames as-is, but `?cb=<md5>` suffix for URLs generated
+  #          with `asset_path`, `javascript` and `stylesheet`:
+  #
+  #     source file:  _assets/javascripts/app.css
+  #     output file:  _site/assets/javascriptis/app.css
+  #     output URL:   /assets/javascripts/app.css?cb=4f41243847da693a4f356c0486114bc6
+  #
+  #   hard - (default) injects cachebusting checksum into processed filename:
+  #
+  #     source file:  _assets/javascripts/app.css
+  #     output file:  _site/assets/javascriptis/app-4f41243847da693a4f356c0486114bc6.css
+  #     output URL:   /assets/javascripts/app-4f41243847da693a4f356c0486114bc6.css
+  #
+  cachebust: hard
+  #
+  # Whenever or not cache compiled assets (disabled by default).
+  # See `Compilation Cache` section of README for details.
+  #
+  cache: false
+
+  gzip: [ text/css, application/javascript ]
+  #
+  # Does not concatenates files requested by `javascript` and `stylesheet`
+  # helpers. Instead outputs multiple files in order they are required.
+  # Default: false
+  #
+  debug: true
+  #
+  # Configuration version. Used to force cache invalidation.
+  # Default: 1
+  #
+  version: 1
