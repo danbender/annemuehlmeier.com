@@ -256,7 +256,6 @@
   	.info-keys {
   		display: none;
   	}
-
   }
 
   @media screen and (max-width: 35em) {
@@ -272,11 +271,6 @@
   		background: rgba(255,255,255,1);
   	}
 
-  /*	img.video-thumbs {
-  		width: 150px;
-  		height: 83px;
-  	}
-*/
   	.slideshow nav span.nav-prev, .slideshow nav span.nav-next {
   		top: 35%;
   	}
