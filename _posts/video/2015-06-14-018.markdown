@@ -1,9 +1,9 @@
 ---
 layout: default
 date:   2015-04-07 08:05:00
-video_id: 17268481
-thumb: 17268481.jpg
-video_title: Reel
+video_id: 17305491
+thumb: 17305491.jpg
+video_title: Dancing
 category:
 - video
 ---
