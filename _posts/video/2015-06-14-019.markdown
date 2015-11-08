@@ -1,9 +1,0 @@
----
-layout: default
-date:   2015-04-07 08:05:00
-video_id: 32144700
-thumb: 32144700.jpg
-video_title: Teaser
-category:
-- video
----
