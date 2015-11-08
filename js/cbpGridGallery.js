@@ -162,14 +162,14 @@
 		// position previous item on the left side and the next item on the right side
 		if( this.prevItem ) {
 			classie.addClass( this.prevItem, 'show' );
-			var translateVal = Number( -1 * ( getViewportW() / 2 + this.prevItem.offsetWidth / 2 ) );
-			setTransform( this.prevItem, support.support3d ? 'translate3d(' + translateVal + 'px, 0, -150px)' : 'translate(' + translateVal + 'px)' );
+			// var translateVal = Number( -1 * ( getViewportW() / 2 + this.prevItem.offsetWidth / 2 ) );
+			// setTransform( this.prevItem, support.support3d ? 'translate3d(' + translateVal + 'px, 0, -150px)' : 'translate(' + translateVal + 'px)' );
 		}
 		if( this.nextItem ) {
 			classie.addClass( this.nextItem, 'show' );
-			var translateVal = Number( getViewportW() / 2 + this.nextItem.offsetWidth / 2 );
+			// var translateVal = Number( getViewportW() / 2 + this.nextItem.offsetWidth / 2 );
 
-			setTransform( this.nextItem, support.support3d ? 'translate3d(' + translateVal + 'px, 0, -150px)' : 'translate(' + translateVal + 'px)' );
+			// setTransform( this.nextItem, support.support3d ? 'translate3d(' + translateVal + 'px, 0, -150px)' : 'translate(' + translateVal + 'px)' );
 		}
 	};
 

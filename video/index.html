@@ -23,9 +23,7 @@ layout: default
     <ul>
       {% for post in site.categories['video'] reversed %}
       <li>
-        <figure>
           <iframe id="current_video" src="http://player.vimeo.com/video/{{ post.video_id }}?api=1&color=ffffff&title=0&byline=0&portrait=0" width="68%" height="56%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </figure>
       </li>
       {% endfor %}
     </ul>
@@ -40,7 +38,6 @@ layout: default
 
 <a href="{{ site.url }}/impressum/" id="impressum">Impressum</a>
 
-<script src="{{ site.url }}/js/zepto.min.js"></script>
 <script src="{{ site.url }}/js/froogaloop.min.js"></script>
 <script>
   function pauseAll() {
