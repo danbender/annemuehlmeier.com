@@ -168,7 +168,7 @@
     z-index: 100000000;
   }
 
-  #current_video {
+  .current_video {
   	position: absolute !important;
   	left: 16% !important;
   	top: 22% !important;
@@ -254,7 +254,7 @@
   		top: 35%;
   	}
 
-  	#current_video {
+  	.current_video {
   		top: 5% !important;
   	}
   }

@@ -11,7 +11,7 @@ layout: default
       {% for post in site.categories['video'] reversed %}
       <li>
         <figure>
-          <img src="{{ site.url }}/portfolio/video/{{ post.thumb }}" alt="{{ Anne Muehlmeier - Model und Schauspielerin }}"/>
+          <img src="{{ site.url }}/portfolio/video/{{ post.thumb }}" alt="{{ Anne Muehlmeier - Model und Schauspielerin }}" class="video_thumb"/>
         </figure>
         <span class="video-title">{{ post.video_title }}</span>
       </li>
@@ -23,7 +23,7 @@ layout: default
     <ul>
       {% for post in site.categories['video'] reversed %}
       <li>
-          <iframe src="http://player.vimeo.com/video/{{ post.video_id }}?api=1&color=ffffff&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <iframe src="http://player.vimeo.com/video/{{ post.video_id }}?api=1&color=ffffff&title=0&byline=0&portrait=0" width="75%" height="50%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="current_video"></iframe>
       </li>
       {% endfor %}
     </ul>
@@ -43,7 +43,6 @@ layout: default
   function pauseAll() {
     $('iframe[src*="vimeo.com"]').each(function () {
       $f(this).api('pause');
-      console.log(this);
     });
   }
 
@@ -60,6 +59,5 @@ layout: default
   nextButton.addEventListener("click", function() {
     pauseAll();
   });
-
 
 </script>
