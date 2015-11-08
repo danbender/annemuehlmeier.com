@@ -19,11 +19,6 @@
 		top:47%;
 		color: transparent;
 		text-align: center;
-/*		transition: all 0.2s linear;
-  	-moz-transition: all 0.2s linear;
-  	-webkit-transition: all 0.2s linear;
-  	-o-transition: all 0.2s linear;
-  	-ms-transition: all 0.2s linear;*/
   }
 
   li:hover .video-title {
