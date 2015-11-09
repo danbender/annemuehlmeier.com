@@ -159,11 +159,11 @@
 
   /* Overwriting show styles for currently viewed img */
   .current {
-  	width: 75% !important;
-  	height: 94% !important;
-  	position: absolute !important;
-  	left: 12.5% !important;
-  	top: 3% !important;
+  	width: 70% !important;
+    height: 94% !important;
+    position: absolute !important;
+    left: 14.5% !important;
+    top: 9% !important;
   	margin: 0 auto !important;
     z-index: 100000000;
   }
