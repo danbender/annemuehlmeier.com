@@ -8,7 +8,7 @@ layout: default
 		<ul class="grid">
 			<li class="grid-sizer"></li><!-- for Masonry column width -->
 
-			{% for post in site.categories['portfolio'] reversed %}
+			{% for post in site.categories['portfolio'] %}
 			<li>
 				<figure>
 					<img src="{{ site.url }}/portfolio/photo/thumb/portfolio/{{ post.photo }}" alt="{{ Anne Muehlmeier - Model und Schauspielerin }}"/>
@@ -20,7 +20,7 @@ layout: default
 
 	<section class="slideshow">
 		<ul>
-			{% for post in site.categories['portfolio'] reversed %}
+			{% for post in site.categories['portfolio'] %}
 			<li>
 				<figure>
 					<img src="{{ site.url }}/portfolio/photo/large/portfolio/{{ post.photo }}" alt="{{ post.caption_header }}"/>
