@@ -1,9 +1,0 @@
----
-layout: default
-date:   2015-04-07 08:25:00
-photo: 025.jpg
-caption_header: Sample header
-caption: sample caption
-category:
-- portfolio
----
