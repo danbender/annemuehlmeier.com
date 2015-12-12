@@ -1,7 +1,7 @@
 ---
 layout: default
 date:   2015-12-12 08:00:00
-photo: 001.jpg
+photo: 044.jpg
 caption_header: Sample header
 caption: sample caption
 category:
