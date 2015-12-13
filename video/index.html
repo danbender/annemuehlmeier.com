@@ -8,7 +8,7 @@ layout: default
     <ul class="grid">
       <li class="grid-sizer"></li><!-- for Masonry column width -->
 
-      {% for post in site.categories['video'] reversed %}
+      {% for post in site.categories['video'] %}
       <li>
         <figure>
           <img src="{{ site.url }}/portfolio/video/{{ post.thumb }}" alt="{{ Anne Muehlmeier - Model und Schauspielerin }}" class="video_thumb"/>
@@ -21,7 +21,7 @@ layout: default
 
   <section class="slideshow">
     <ul>
-      {% for post in site.categories['video'] reversed %}
+      {% for post in site.categories['video'] %}
       <li>
           <iframe src="http://player.vimeo.com/video/{{ post.video_id }}?api=1&color=ffffff&title=0&byline=0&portrait=0" width="65%" height="40%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="current_video"></iframe>
       </li>
@@ -43,6 +43,7 @@ layout: default
   function pauseAll() {
     $('iframe[src*="vimeo.com"]').each(function () {
       $f(this).api('pause');
+      console.log(this)
     });
   }
 
