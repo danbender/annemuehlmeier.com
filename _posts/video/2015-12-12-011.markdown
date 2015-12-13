@@ -1,9 +1,9 @@
 ---
 layout: default
 date:   2015-04-07 08:05:00
-video_id: 72815438
-thumb: 72815438.jpg
-video_title: Bench.
+video_id: 74207625
+thumb: 74207625.jpg
+video_title: BORN ELECTRIC [BMW i]
 category:
 - video
 ---
