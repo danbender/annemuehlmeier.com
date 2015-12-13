@@ -1,9 +1,9 @@
 ---
 layout: default
 date:   2015-04-07 08:05:00
-video_id: 137113994
-thumb: 137113994.jpg
-video_title: Namika
+video_id: 95639933
+thumb: 95639933.jpg
+video_title: CECIL
 category:
 - video
 ---
