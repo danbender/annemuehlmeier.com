@@ -1,9 +1,9 @@
 ---
 layout: default
 date:   2015-04-07 08:05:00
-video_id: 105956565
-thumb: 105956565.jpg
-video_title: SCHILLER
+video_id: 72815438
+thumb: 72815438.jpg
+video_title: Bench.
 category:
 - video
 ---
