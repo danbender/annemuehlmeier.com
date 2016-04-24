@@ -1,6 +1,7 @@
 _site
 .sass-cache
 
+.DS_Store
 Gemfile.lock
 test/dest
 *.gem
@@ -9,7 +10,6 @@ pkg/
 *~
 _site/
 .bundle/
-.DS_Store
 bbin/
 gh-pages/
 site/_site/
