@@ -1,4 +1,5 @@
 name: Anne Muehlmeier
+# markdown: redcarpet
 highlighter: pygments
 permalink: /:year/:month/:title/
 url: http://annemuehlmeier.com #http://localhost:4000/
