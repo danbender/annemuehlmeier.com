@@ -11,7 +11,7 @@ layout: default
       {% for post in site.categories['video'] %}
       <li>
         <figure>
-          <img src="{{ site.url }}/portfolio/video/{{ post.thumb }}" alt="{{ Anne Muehlmeier - Model und Schauspielerin }}" class="video_thumb"/>
+          <img  class="video_thumb lazyload" src="{{ site.url }}/portfolio/video-placeholder.png" data-src="{{ site.url }}/portfolio/video/{{ post.thumb }}" alt="{{ Anne Muehlmeier - Model und Schauspielerin }}"/>
         </figure>
         <span class="video-title">{{ post.video_title }}</span>
       </li>
@@ -43,7 +43,7 @@ layout: default
   function pauseAll() {
     $('iframe[src*="vimeo.com"]').each(function () {
       $f(this).api('pause');
-      console.log(this)
+      // console.log(this)
     });
   }
 

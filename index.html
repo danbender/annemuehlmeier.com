@@ -11,7 +11,7 @@ layout: default
 			{% for post in site.categories['portfolio'] %}
 			<li>
 				<figure>
-					<img src="{{ site.url }}/portfolio/photo/thumb/portfolio/{{ post.photo }}" alt="{{ Anne Muehlmeier - Model und Schauspielerin }}"/>
+					<img class="lazyload" src="{{ site.url }}/portfolio/photo-placeholder.png" data-src="{{ site.url }}/portfolio/photo/thumb/portfolio/{{ post.photo }}" alt="{{ Anne Muehlmeier - Model und Schauspielerin }}"/>
 				</figure>
 			</li>
 			{% endfor %}
