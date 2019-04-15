@@ -3,7 +3,7 @@ layout: default
 date:   2015-04-07 08:05:00
 video_id: 285457769
 thumb: 285457769.jpg
-video_title: Henkel - Sidolin
+video_title: NIVEA - Robin Schulz
 category:
 - video
 ---
